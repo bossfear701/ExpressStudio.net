@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Express Studio 2.0</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Express Studio 2.0 — websites, games, Minecraft SMP, Roblox, AI experiments, communities.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#"><img src="assets/logo.png" alt="Express Studio 2.0 logo" id="logo" /></a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#games">Games</a>
+        <a href="#links">Links</a>
+        <a href="#ai">AI</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cta"><a href="https://discord.gg/Mpc4jnKqFx" target="_blank">Join Discord</a></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1>Express Studio 2.0</h1>
+        <p class="tagline">Websites. Games. Community. Faith-forward content. Big ideas, bigger builds.</p>
+        <p class="hero-actions"><a class="btn" href="#projects">See Projects</a> <a class="btn ghost" href="#links">All Links</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="card container">
+      <h2>About Express Studio 2.0</h2>
+      <p>Express Studio 2.0 is a brand new chapter. After Express Studio 1.0 (2.5K subscribers) faced community & policy issues, we relaunched to focus on building — websites, games, servers, and safe community spaces. We run a big Discord with free advertising (600 members), create Roblox & Unity games, manage Minecraft SMP projects, and produce content including the <strong>Biblical Awareness</strong> channel to help people grow spiritually. We might open a health-awareness channel soon and we're exploring dropshipping & a shop.</p>
+      <ul>
+        <li>Services: Web design, game dev, server hosting, content creation, streaming, podcasts</li>
+        <li>Community: Discord (free & paid advertising), YouTube channels, socials</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container card">
+      <h2>Projects & Channels</h2>
+      <div class="grid">
+        <div class="project">
+          <h3>Earth Craft SMP</h3>
+          <p>Massive realistic SMP with custom countries, mods, and economy. (in development)</p>
+        </div>
+        <div class="project">
+          <h3>Forgotten Shores</h3>
+          <p>Creepy survival/horror in Unity. (in development)</p>
+        </div>
+        <div class="project">
+          <h3>Dead End</h3>
+          <p>GTA-like real game in Unity. (in progress)</p>
+        </div>
+        <div class="project">
+          <h3>High Life (Roblox)</h3>
+          <p>GTA-style experience on Roblox. <a href="https://www.roblox.com/games/133460402201467/Highlife-DEMO" target="_blank">Play demo</a></p>
+        </div>
+        <div class="project">
+          <h3>Wake Up (Roblox)</h3>
+          <p>Horror game. <a href="https://www.roblox.com/games/7332779121/Wake-Up" target="_blank">Play</a></p>
+        </div>
+        <div class="project">
+          <h3>Pixel Craft (Roblox)</h3>
+          <p>Roblox pixel-based multiplayer. <a href="https://www.roblox.com/games/16542763505/Pixel-Craft-MULTIPLAYER" target="_blank">Play</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="games" class="container card">
+      <h2>Games & Servers</h2>
+      <p>We make Roblox games, Unity games, and operate Minecraft SMPs like Earth Craft SMP 2.0. We're building immersive mechanics, jobs, transit, and economies.</p>
+    </section>
+
+    <section id="links" class="container card">
+      <h2>All Links</h2>
+      <ul class="links-list">
+        <li>Instagram: <a href="https://www.instagram.com/expressstudiov2/" target="_blank">expressstudiov2</a></li>
+        <li>YouTube: <a href="https://www.youtube.com/@ExpressStudio2X" target="_blank">ExpressStudio2X</a></li>
+        <li>Discord: <a href="https://discord.gg/Mpc4jnKqFx" target="_blank">Express Studio Discord</a></li>
+        <li>Roblox Profile: <a href="https://www.roblox.com/users/1713920949/profile" target="_blank">Profile</a></li>
+        <li>Virtual Wardrobe: <a href="https://www.roblox.com/games/86716578602926/Virtual-Wardrobe" target="_blank">Virtual Wardrobe</a></li>
+        <li>Guns.lol page: <a href="https://guns.lol/expressstudios" target="_blank">guns.lol/expressstudios</a></li>
+        <li>Pinterest: <a href="https://www.pinterest.com/Express_Studios" target="_blank">Express_Studios</a></li>
+        <li>Old Express Studio site: <a href="https://sites.google.com/view/express-studio-web/home" target="_blank">legacy</a></li>
+        <li>Old Earth Craft site: <a href="https://sites.google.com/view/earth-craft-smp/home" target="_blank">legacy</a></li>
+        <li>TikTok: Coming soon</li>
+      </ul>
+      <p class="note">Facebook: not used — it's for old ppl (we kept this note intentionally)</p>
+    </section>
+
+    <section id="ai" class="container card">
+      <h2>AI / Chat (demo)</h2>
+      <p>This site is static and safe for GitHub Pages. <strong>Do not embed API keys into client-side code.</strong> Instead, set up a secure server or proxy to call the API. Below is a demo form that will try to call <code>/api/ai</code> — which will only work if you host a small server or serverless function to proxy requests safely (see README).</p>
+
+      <form id="aiForm" onsubmit="return false;">
+        <label for="q">Ask the AI:</label>
+        <input id="q" placeholder="Type a question..." />
+        <button id="askBtn" class="btn">Ask</button>
+      </form>
+
+      <div id="aiResult" class="ai-result">AI response will appear here (demo only).</div>
+      <p class="small">If the API is unavailable, this section will display "Not available".</p>
+    </section>
+
+    <section id="contact" class="container card">
+      <h2>Contact & Shop</h2>
+      <p>We may open a shop for merch & dropshipping. For business inquiries: add contact@expressstudio.net to your email client (replace with real email when ready).</p>
+      <p>Copyright © <span id="year"></span> Express Studio 2.0 — All rights reserved.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Express Studio 2.0 • Built for GitHub Pages. Replace <code>assets/logo.png</code> with your logo. Do NOT add API keys client-side.</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
